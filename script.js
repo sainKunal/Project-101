@@ -9,10 +9,10 @@ async function fetchMatchData() {
       });
   
       const data = await response.json();
-      console.log("API Response: ", data);  // Log the entire API response
+      console.log("API Response: ", data);  
   
       if (data && data.matches && data.matches.length > 0) {
-        const match = data.matches[0];  // Get the first match in the response
+        const match = data.matches[0];  
   
         document.getElementById('team1-name').innerHTML = `Team 1: <span>${match.team1.name}</span>`;
         document.getElementById('team2-name').innerHTML = `Team 2: <span>${match.team2.name}</span>`;
