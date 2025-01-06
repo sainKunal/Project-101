@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Sports Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Live Sports Analytics Dashboard</h1>
+        </header>
+
+        <div id="match-info" class="section">
+            <h2>Match Info</h2>
+            <p id="team1-name">Team 1: <span>Loading...</span></p>
+            <p id="team2-name">Team 2: <span>Loading...</span></p>
+            <p id="score">Score: <span>0 - 0</span></p>
+        </div>
+
+        <div id="player-stats" class="section">
+            <h2>Player Stats</h2>
+            <div class="player">
+                <p>Player A (Team A): <span id="playerA-score">0</span> points</p>
+            </div>
+            <div class="player">
+                <p>Player B (Team B): <span id="playerB-score">0</span> points</p>
+            </div>
+        </div>
+
+        <div id="interactive-chart" class="section">
+            <h2>Interactive Chart</h2>
+            <div class="chart">
+                <div id="team1-bar" class="bar"></div>
+                <div id="team2-bar" class="bar"></div>
+            </div>
+        </div>
+
+        <div id="update-button" class="section">
+            <button onclick="updateScores()">Update Scores</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

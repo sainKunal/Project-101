@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f0f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard {
+    background-color: #fff;
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2d87f0;
+    margin-bottom: 30px;
+}
+
+.section h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#match-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 8px 0;
+}
+
+#match-info span {
+    font-weight: bold;
+}
+
+.player {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.player span {
+    font-weight: bold;
+    color: #2d87f0;
+}
+
+#interactive-chart {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar {
+    height: 40px;
+    border-radius: 20px;
+    margin: 10px 0;
+    transition: width 0.5s ease;
+}
+
+#team1-bar {
+    background-color: #2d87f0;
+}
+
+#team2-bar {
+    background-color: #f04e40;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #1f67a0;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: 20px;
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .player p, #match-info p {
+        font-size: 1rem;
+    }
+}
